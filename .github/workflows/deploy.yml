@@ -103,7 +103,7 @@ jobs:
             nvm use --lts
 
             # (3) 레포 동기화
-           REPO_URL =\"${{ secrets.REPO_URL }}\"
+           REPO_URL=\"${{ secrets.REPO_URL }}\"
             APP_DIR=\"${{ secrets.PRIVATE_APP_DIR }}\"
 
             if [ ! -d \"\$APP_DIR/.git\" ]; then
